@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+    let columns: [GridItem] = [GridItem(.flexible()),
+                               GridItem(.flexible())] // dictates # of columns
     var body: some View {
-        FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+        LazyVGrid(columns: columns) {
+            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+        }
+        
     }
 }
 
@@ -20,8 +30,10 @@ struct FrameworkGridView_Previews: PreviewProvider {
 }
 
 struct FrameworkTitleView: View {
+    
     let name: String
     let imageName: String
+    
     var body: some View{
         VStack {
             Image(imageName)
