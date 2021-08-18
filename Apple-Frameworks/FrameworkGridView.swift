@@ -9,15 +9,13 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     let columns: [GridItem] = [GridItem(.flexible()),
+                               GridItem(.flexible()),
                                GridItem(.flexible())] // dictates # of columns
     var body: some View {
         LazyVGrid(columns: columns) {
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
-            FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+            ForEach(MockData.frameworks) { framework in
+                FrameworkTitleView(name: framework.name, imageName: framework.imageName)
+            }
         }
         
     }
