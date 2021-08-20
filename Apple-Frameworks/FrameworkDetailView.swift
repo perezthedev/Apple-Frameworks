@@ -2,7 +2,7 @@
 //  FrameworkDetailView.swift
 //  Apple-Frameworks
 //
-//  Created by thepercussivedev on 8/18/21.
+//  Created by PerezTheDev on 8/18/21.
 //
 
 import SwiftUI
