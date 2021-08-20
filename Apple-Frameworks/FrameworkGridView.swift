@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
+    
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())] // dictates # of columns
@@ -15,8 +18,11 @@ struct FrameworkGridView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
-                    ForEach(MockData.frameworks) { framework in
+                    ForEach(MockData.frameworks) { framework in //builds each individual title view
                         FrameworkTitleView(framework: framework)
+                            .onTapGesture {
+                                print("Hello world!")
+                            }
                     }
                 }
             }
