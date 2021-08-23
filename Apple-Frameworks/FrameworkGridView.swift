@@ -11,13 +11,10 @@ struct FrameworkGridView: View {
     
     @StateObject var viewModel = FrameworkGridViewModel()
     
-    let columns: [GridItem] = [GridItem(.flexible()),
-                               GridItem(.flexible()),
-                               GridItem(.flexible())] // dictates # of columns
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: viewModel.columns) {
                     ForEach(MockData.frameworks) { framework in //builds each individual title view
                         FrameworkTitleView(framework: framework)
                             .onTapGesture {
