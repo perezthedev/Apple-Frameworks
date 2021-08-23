@@ -17,6 +17,7 @@
 		F2A7D54326D00F1C00E40B93 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7D54226D00F1C00E40B93 /* FrameworkGridViewModel.swift */; };
 		F2A7D54726D1C9CD00E40B93 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7D54626D1C9CD00E40B93 /* SafariView.swift */; };
 		F2A7D54B26D34D7700E40B93 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7D54A26D34D7700E40B93 /* FrameworkTitleView.swift */; };
+		F2A7D54E26D34E7500E40B93 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7D54D26D34E7500E40B93 /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F2A7D54226D00F1C00E40B93 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		F2A7D54626D1C9CD00E40B93 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		F2A7D54A26D34D7700E40B93 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		F2A7D54D26D34E7500E40B93 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				F211968826CD2E7900117F40 /* AFButton.swift */,
 				F2A7D54626D1C9CD00E40B93 /* SafariView.swift */,
 				F2A7D54A26D34D7700E40B93 /* FrameworkTitleView.swift */,
+				F2A7D54D26D34E7500E40B93 /* XDismissButton.swift */,
 			);
 			path = "Apple-Frameworks";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				F211968626CD2C2200117F40 /* FrameworkDetailView.swift in Sources */,
 				F2997E4E26CB61B300E76B4D /* FrameworkGridView.swift in Sources */,
+				F2A7D54E26D34E7500E40B93 /* XDismissButton.swift in Sources */,
 				F2997E4926CB5FFE00E76B4D /* Framework.swift in Sources */,
 				F211968926CD2E7900117F40 /* AFButton.swift in Sources */,
 				F2997E3926CB5F7D00E76B4D /* Apple_FrameworksApp.swift in Sources */,

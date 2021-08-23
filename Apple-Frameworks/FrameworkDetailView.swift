@@ -15,18 +15,7 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Spacer()
-                Button {
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label)) //label: light in dark mode, dark in light mode
-                        .imageScale(.large)
-                        .frame(width:44, height: 44)
-                }
-            }
-            .padding()
+            
             
             Spacer()
             
